@@ -1,13 +1,13 @@
-@define-color bar-background #00070D;
+@define-color bar-background #234432;
 @define-color button-background transparent;
-@define-color theme-accent #291c51;
-@define-color battery-ok #35613B;
+@define-color theme-accent #234432;
+@define-color battery-ok #e7f2e7;
 @define-color battery-warning #B1931D;
 @define-color battery-critical #DB0144;
 @define-color battery-charging #3C679E;
-@define-color icon-neutral #7E858D;
-@define-color icon-accent #611641;
-@define-color icon-secondary #01516D;
+@define-color icon-neutral #e7f2e7;
+@define-color icon-accent #e7f2e7;
+@define-color icon-secondary #e7f2e7;
 
 
 
@@ -17,13 +17,12 @@
 }
 
 #waybar {
-  border-radius: 24px;
-  border: 1px solid @icon-accent;
+  border-radius: 16px;
 
 	font-family: 'SauceCodePro Nerd Font', sans-serif;
 	font-size: 1.2em;
 	font-weight: 400;
-  background: shade(alpha(@bar-background, 0.8), 1.0);
+  background: shade(alpha(@bar-background, 1.0), 1.0);
 }
 
 #workspaces {

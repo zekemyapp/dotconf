@@ -1,0 +1,29 @@
+@define-color background #07120c;
+@define-color search-background #234432;
+@define-color text #e7f2e7;
+
+* {
+    box-shadow: none;
+}
+
+#input {
+    background-color: alpha(@search-background, 0.9);
+    color: #e7f2e7;
+}
+
+
+#window {
+    background-color: alpha(@background, 0.9);
+    color: #e7f2e7;
+    border-radius: 10px;
+}
+
+#entry:selected {
+    background-color: alpha(@search-background, 0.9);
+    color: #e7f2e7;
+}
+
+#expander-box {
+    background-color: alpha(@search-background, 0.9);
+    color: #e7f2e7;
+}
