@@ -1,0 +1,125 @@
+@define-color bar-background #01291D;
+@define-color button-background #01291D;
+
+* {
+  transition: none;
+  box-shadow: none;
+}
+
+#waybar {
+	font-family: 'SauceCodePro Nerd Font', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+  color: #b8b8b8;
+  background: rgba(0, 0, 0, 0.0);;
+}
+
+#workspaces {
+  margin: 0 4px;
+}
+
+#workspaces button {
+  margin: 4px 0;
+  padding: 0 4px;
+  color: #d8d8d8;
+}
+
+#workspaces button.visible {
+}
+
+#workspaces button.active {
+  border-radius: 4px;
+}
+
+#workspaces button.urgent {
+  color: rgba(238, 46, 36, 1);
+}
+
+#tray {
+  margin: 4px 4px 4px 4px;
+  border-radius: 4px;
+  background-color: @button-background;
+}
+
+#tray * {
+  padding: 0 6px;
+  border-left: 1px solid #01291D;
+}
+
+#tray *:first-child {
+  border-left: none;
+}
+
+#mode, #battery, #cpu, #clock, #memory, #network, #pulseaudio, #idle_inhibitor, #backlight, #custom-storage, #custom-updates, #custom-weather, #custom-mail, #clock, #temperature, #language {
+  margin: 4px 2px;
+  padding: 0 6px;
+  background-color: @button-background;
+  min-width: 20px;
+
+  border-radius: 10px;
+  border-bottom: 3px;
+  border-style: solid;
+  border-color: #d8d8d8;
+}
+
+#custom-launcher {
+  font-size: 18px;
+  margin: 4px 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+  padding-right: 10px;
+  background-color: @button-background;
+  min-width: 0px;
+
+  border-radius: 10px;
+  border-bottom: 3px;
+  border-style: solid;
+  border-color: #d8d8d8;
+}
+
+#custom-power {
+  font-size: 14px;
+  margin: 4px 2px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 8px;
+  padding-right: 10px;
+  background-color: @button-background;
+  min-width: 0px;
+
+  border-radius: 10px;
+  border-bottom: 3px;
+  border-style: solid;
+  border-color: #d8d8d8;
+}
+
+#pulseaudio.muted {
+  color: #a16946;
+}
+
+#pulseaudio.bluetooth {
+  color: #86c1b9;
+}
+
+/* #clock {
+  margin-left: 0px;
+  margin-right: 4px;
+  background-color: transparent;
+} */
+
+#temperature.critical {
+  color: #a16946;
+}
+
+#window {
+  font-size: 0.9em;
+	font-weight: 400;
+	font-family: sans-serif;
+}
+
+#language {
+	font-size: 0.9em;
+	font-weight: 500;
+	letter-spacing: -1px;
+}

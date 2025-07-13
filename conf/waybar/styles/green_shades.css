@@ -1,11 +1,14 @@
-@define-color bar-background #C0C0C0;
+@define-color bar-background #234432;
 @define-color button-background transparent;
-@define-color battery-ok #191919;
+@define-color theme-accent #234432;
+@define-color battery-ok #e7f2e7;
 @define-color battery-warning #B1931D;
 @define-color battery-critical #DB0144;
 @define-color battery-charging #3C679E;
-@define-color icon-neutral #000000;
-@define-color icon-accent #666666;
+@define-color icon-neutral #e7f2e7;
+@define-color icon-accent #e7f2e7;
+@define-color icon-secondary #e7f2e7;
+
 
 
 * {
@@ -31,7 +34,7 @@
 #workspaces button {
   margin: 4px 0;
   padding: 0 2px;
-  color: @icon-accent;
+  color: @icon-neutral;
   transition: none;
 }
 
@@ -46,7 +49,7 @@
 
 #workspaces button.active {
   border-radius: 4px;
-  color: @icon-neutral;
+  color: #549070;
 }
 
 #workspaces button.urgent {
@@ -86,7 +89,7 @@
 
   border-radius: 16px;
 
-  color: @icon-neutral;
+  color: @icon-secondary;
 }
 
 #idle_inhibitor {
@@ -97,11 +100,11 @@
 
   border-radius: 16px;
 
-  color: @icon-accent;
+  color: @icon-secondary;
 }
 
 #idle_inhibitor.activated {
-  color: @icon-neutral;
+  color: @icon-accent;
 }
 
 #clock {
@@ -125,7 +128,7 @@
   background-color: @button-background;
   min-width: 20px;
 
-  color: @icon-neutral;
+  color: @icon-accent;
 
   border-radius: 16px;
 }
@@ -163,7 +166,7 @@
   padding-right: 10px;
   background-color: @button-background;
   min-width: 30px;
-  color: @icon-neutral;
+  color: @battery-ok;
 
   border-radius: 16px;
 }
@@ -193,7 +196,7 @@
   min-width: 30px;
 
   border-radius: 16px;
-  color:@icon-neutral
+  color:@icon-secondary
 }
 
 #pulseaudio.muted {

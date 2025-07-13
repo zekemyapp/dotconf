@@ -1,7 +1,7 @@
-@define-color background #ffffff;
-@define-color search-background #121212;
-@define-color border-color #000000;
-@define-color text-color #000000;
+@define-color background #07120c;
+@define-color search-background #234432;
+@define-color border-color #234432;
+@define-color text-color #e7f2e7;
 
 * {
     box-shadow: none;
@@ -10,22 +10,21 @@
 #window {
     background-color: alpha(@background, 0.9);
     color: @text-color;
-    border-radius: 3px;
-    border: 0px solid @border-color;
+    border-radius: 12px;
+    border: 2px solid @border-color;
 }
 
 #input {
     background-color: alpha(@search-background, 0.9);
     color: @text-color;
-    border-radius: 2px;
-    padding: 5px 20px;
+    border-radius: 12px;
     border: 0px solid @border-color;
 }
 
 #entry:selected {
     background-color: alpha(@search-background, 0.9);
     color: @text-color;
-    border-radius: 2px;
+    border-radius: 12px;
     outline: none;
 }
 
